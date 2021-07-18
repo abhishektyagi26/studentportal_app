@@ -41,9 +41,11 @@ public class frag1 extends Fragment {
 
                 }
 
-                getParentFragmentManager().beginTransaction().addToBackStack("abhishek").replace(R.id.fragment1,new frag2(ed.getText().toString()))
-                        .commit();
-            }
+                getParentFragmentManager()
+                        .beginTransaction()
+                        .addToBackStack("abhishek")
+                        .replace(R.id.actualStudentActivity,new frag2(ed.getText().toString()))
+                        .commit();         }
         });
 
 //        b2.setOnClickListener(new View.OnClickListener() {

@@ -217,10 +217,9 @@ public class frag2 extends Fragment {
 
                             FirebaseUser user = task.getResult().getUser();
 
-//                            Intent intent = new Intent(requireContext(), Student.class);
-//                            startActivity(intent);
-//                            requireActivity().finish();
-
+                            Intent intent = new Intent(requireContext(), Student.class);
+                            startActivity(intent);
+                            requireActivity().finish();
                             // Update UI
                         } else {
                             // Sign in failed, display a message and update the UI

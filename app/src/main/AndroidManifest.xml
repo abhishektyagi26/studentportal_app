@@ -5,22 +5,27 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Student"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Numberotpsignin.NoActionBar">
+        <activity android:name=".FacultyStudentlist"></activity>
+        <activity android:name=".FFacultyProfile" />
+        <activity android:name=".StudentSubjects" />
+        <activity android:name=".SStudentProfile" />
         <activity
-            android:name=".ActualStudentActivity"
-            ></activity>
-        <activity
-            android:name=".Student"
-            android:label="Student">
+            android:name=".FacultyActivity"
+            android:label="Faculty">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ActualStudentActivity" />
+        <activity
+            android:name=".Student"
+            android:label="Student" />
         <activity android:name=".AssignProctore" />
         <activity android:name=".AssignSubjectByHod" />
         <activity android:name=".FacultyProfile" />
@@ -34,7 +39,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".faculty">
+        <activity
+            android:name=".faculty"
+            android:label="@string/faculties">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
